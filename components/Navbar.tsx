@@ -5,7 +5,19 @@ import Link from "next/link";
 import styles from "./navbar.module.scss";
 import { usePathname } from "next/navigation";
 
-export const MENU_ITEMS = [
+// Define types for menu items
+interface DropdownItem {
+  href: string;
+  label: string;
+}
+
+interface MenuItem {
+  href?: string;
+  label: string;
+  dropdown?: DropdownItem[];
+}
+
+export const MENU_ITEMS: MenuItem[] = [
   { href: "/mitglied", label: "Mitglied werden" },
   { href: "/kontakt", label: "Kontakt" },
   {
@@ -81,7 +93,7 @@ const Navbar: React.FC = () => {
         <Link href="/" className={styles.logo} />
         
         <ul className={styles.menu}>
-          {MENU_ITEMS.map((item, index) => {
+          {MENU_ITEMS.map((item: MenuItem, index: number) => {
             const isParentActive =
               item.dropdown &&
               item.dropdown.some((sub) => pathname.startsWith(sub.href));
@@ -100,7 +112,7 @@ const Navbar: React.FC = () => {
                       {item.label}
                     </span>
                     <ul className={styles.dropdown}>
-                      {item.dropdown.map((sub) => {
+                      {item.dropdown.map((sub: DropdownItem) => {
                         const isActive = pathname === sub.href;
                         return (
                           <li
