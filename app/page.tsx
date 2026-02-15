@@ -40,11 +40,87 @@ const Navigation: React.FC = () => {
       </ContentSection>
 
       <ContentSection>
-        <h1 id="sec02">Mitglied werden</h1>
+        <h1>Häufig gestellte Fragen (FAQ) – CSC Neuss e.V.</h1>
+
+        <h2>1. Was ist ein Anbauverein?</h2>
         <p>
-          Um Mitglied im CSC NEUSS e.V. zu werden, füllen Sie bitte das Mitgliedschaftsformular auf unserer Website aus. Nach der Überprüfung Ihrer Angaben werden wir uns mit Ihnen in Verbindung setzen, um den Beitrittsprozess abzuschließen. Wir freuen uns darauf, Sie in unserer Gemeinschaft willkommen zu heißen!
+          Ein Anbauverein ist ein eingetragener Verein (e.V.) mit offizieller
+          Anbaulizenz der zuständigen Bezirksregierung. Ziel ist der
+          gemeinschaftliche, nicht-gewinnorientierte Anbau von Konsum-Cannabis
+          für die eigenen Mitglieder.
+        </p>
+
+        <h2>2. Was macht der CSC Neuss e.V.?</h2>
+        <p>
+          Gemeinschaftlicher Anbau von Cannabis in einer professionellen
+          Indoor-Anlage. Fokus auf Qualität, Reinheit und verantwortungsvollen
+          Umgang.
+        </p>
+
+        <h2>3. Hat der CSC Neuss e.V. eine Anbaulizenz?</h2>
+        <p>Ja. Seit 2024 staatlich lizenzierter Anbauverein.</p>
+
+        <h2>4. Ab welchem Alter ist eine Mitgliedschaft möglich?</h2>
+        <p>Mindestalter: <strong>21 Jahre</strong></p>
+
+        <h2>5. Was kostet die Mitgliedschaft?</h2>
+        <ul>
+          <li>Aufnahmegebühr (einmalig): <strong>120 €</strong></li>
+          <li>Monatlicher Beitrag: <strong>20 €</strong></li>
+        </ul>
+        <p>Der Monatsbeitrag ist jeweils zum 1. des Monats per Dauerauftrag zu zahlen.</p>
+
+        <h2>6. Wie werde ich Mitglied?</h2>
+        <p><strong>Schritt 1 – Registrierung</strong><br />
+          Anmeldung über den Registrierungslink.
+        </p>
+        <p><strong>Schritt 2 – Zahlung</strong><br />
+          Überweisung von 120 € Aufnahmegebühr und 20 € erstem Monatsbeitrag.
+          Zusätzlich Nachweis über eingerichteten Dauerauftrag einreichen.
+        </p>
+        <p><strong>Schritt 3 – Bestätigung</strong><br />
+          Nach Zahlungseingang und Prüfung erfolgt die offizielle Bestätigung.
+        </p>
+
+        <h2>7. Standort</h2>
+        <p>
+          Neuss-Grimlinghausen (Industriegebiet, Nähe Metro & McDonald’s Norf)
+        </p>
+        <p>
+          CSC Neuss e.V.<br />
+          Im Taubental 37<br />
+          41468 Neuss
+        </p>
+
+        <h2>8. Öffnungszeiten</h2>
+        <ul>
+          <li>Montag: 12:00 – 18:00 Uhr</li>
+          <li>Dienstag: 12:00 – 18:00 Uhr</li>
+          <li>Mittwoch: 12:00 – 18:00 Uhr</li>
+          <li>Donnerstag: Geschlossen</li>
+          <li>Freitag: 12:00 – 18:00 Uhr</li>
+          <li>Samstag: 12:00 – 16:00 Uhr</li>
+          <li>Sonntag: Geschlossen</li>
+        </ul>
+
+        <h2>9. Kontakt</h2>
+        <ul>
+          <li>Telefon: 02131-2945556</li>
+          <li>
+            E-Mail: <a href="mailto:info@cscneuss.com">info@cscneuss.com</a>
+          </li>
+          <li>
+            Webseite: <a href="https://www.cscneuss.com">www.cscneuss.com</a>
+          </li>
+        </ul>
+
+        <h2>10. Versandservice</h2>
+        <p>
+          Nein. Gemäß Konsumcannabisgesetz (KCanG) ist Versand oder Lieferung
+          untersagt. Die Abgabe erfolgt ausschließlich persönlich vor Ort an Mitglieder.
         </p>
       </ContentSection>
+
       
     </>
   );
