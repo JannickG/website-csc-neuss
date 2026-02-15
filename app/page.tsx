@@ -1,66 +1,53 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+import React from 'react';
+import shared from './shared.module.scss';
+// Using Navbar component
+import ImageGallery from '../components/ImageGallery';
+import Navbar from '@/components/Navbar';
+import ContentSection from '@/components/ContentSection';
 
-export default function Home() {
+const Navigation: React.FC = () => {
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <ImageGallery />
+      <Navbar />
+
+      <ContentSection>
+        <h1 className={shared.welcome}>
+          Herzlich Willkommen beim
+          <br />
+          CSC NEUSS e.V
+          <br />
+          dein lizensierter Cannabis Social Club in Neuss!
+        </h1>
+
+        <p className={shared.welcome}>
+          „Für Freiheit, Gesundheit und Gemeinschaft – Unser Verein setzt sich für eine progressive Cannabispolitik ein!“
+        </p>
+
+        <h1 id="sec01">Über Uns</h1>
+        <h3><br></br><br></br>Wir, die sieben Gründer des CSC Neuss, möchten uns herzlich bei euch vorstellen und einen Einblick in unsere Vision für diesen einzigartigen Raum geben.<br></br><br></br></h3>
+        <p>
+          Unsere Gruppe besteht aus passionierten Cannabis-Enthusiasten, die sich zusammengeschlossen haben, um einen Ort zu schaffen, der nicht nur den legalen gemeinschaftlichen Anbau von Cannabis fördert, sondern auch eine Gemeinschaft von Gleichgesinnten vereint.
+
+          Jeder von uns bringt eine einzigartige Expertise in den Club ein, sei es im Bereich des nachhaltigen Anbaus, der kreativen Produktentwicklung oder der Gestaltung einladender Räume für soziale Interaktion. Uns verbindet die Überzeugung, dass Cannabis nicht nur eine Pflanze, sondern auch ein Mittel zur Förderung von Gemeinschaft, Entspannung und Kreativität sein kann.
+
+          Unser Ziel ist es, eine offene und respektvolle Umgebung zu schaffen, in der sich Mitglieder frei austauschen können, sei es über verschiedene Cannabis-Sorten, Anbautechniken oder persönliche Erfahrungen. Wir legen großen Wert darauf, die regionalen Cannabisgesetze zu respektieren und eine verantwortungsbewusste Nutzung zu fördern.
+
+          Wir freuen uns darauf, diese Reise mit euch allen zu teilen und gemeinsam eine blühende Gemeinschaft im CSC Neuss aufzubauen.
+        </p>
+      </ContentSection>
+
+      <ContentSection>
+        <h1 id="sec02">Mitglied werden</h1>
+        <p>
+          Um Mitglied im CSC NEUSS e.V. zu werden, füllen Sie bitte das Mitgliedschaftsformular auf unserer Website aus. Nach der Überprüfung Ihrer Angaben werden wir uns mit Ihnen in Verbindung setzen, um den Beitrittsprozess abzuschließen. Wir freuen uns darauf, Sie in unserer Gemeinschaft willkommen zu heißen!
+        </p>
+      </ContentSection>
+      
+    </>
   );
-}
+};
+
+export default Navigation;

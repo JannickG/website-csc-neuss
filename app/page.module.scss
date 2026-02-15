@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+/* Keep page-specific styles here if needed; shared classes moved to `shared.module.scss` */
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

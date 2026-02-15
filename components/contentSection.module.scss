@@ -1,0 +1,21 @@
+@use "../app/variables" as vars;
+
+.wrapper {
+  background: var(--color-background); 
+  padding-top: 0;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+    
+  background: var(--color-content-background);
+  border-radius: 14px;
+  padding: 60px 50px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+
+  margin-top: -60px;
+}

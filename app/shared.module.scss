@@ -1,0 +1,76 @@
+@use './variables' as vars;
+
+/* Shared classes used across pages and components */
+.container {
+  width: 100%;
+  max-width: vars.$max-width;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.logoSection {
+  position: relative;
+  background: var(--color-background); // dynamic, respects .dark
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: var(--color-primary);
+  padding-top: 110px;
+  min-height: 500px;
+  letter-spacing: 2px;
+  font-family: vars.$font-secondary;
+
+  .heroPlaceholder {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed adjust-color(vars.$color-border-static, $lightness: 10%);
+    background: transparent;
+    color: var(--color-primary);
+    font-size: 14px;
+  }
+}
+
+
+.mouse {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 46px;
+  border-radius: 13px;
+  border: 2px solid var(--color-accent);
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -26px;
+
+  span {
+    display: block;
+    margin: 6px auto;
+    width: 2px;
+    height: 2px;
+    border-radius: 4px;
+    background: var(--color-accent);
+    border: 1px solid transparent;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: scroll;
+  }
+}
+
+.content {
+  padding: 50px 2% 250px;
+}

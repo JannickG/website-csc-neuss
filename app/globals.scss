@@ -1,0 +1,83 @@
+@use './variables' as vars;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   CSS CUSTOM PROPERTIES
+   Define light mode as default
+========================= */
+:root {
+  --color-background: #{vars.$color-background-light};
+  --color-primary: #{vars.$color-primary-light};
+  --color-secondary: #{vars.$color-secondary-light};
+  --color-accent: #{vars.$color-accent-light};
+  --color-border: #{vars.$color-border-light};
+  --theme-toggle: #{vars.$theme-toggle-light};
+  --color-content-background: #{vars.$color-content-background-light};
+}
+
+/* Dark mode - activated by .dark class on html */
+html.dark {
+  --color-background: #{vars.$color-background-dark};
+  --color-primary: #{vars.$color-primary-dark};
+  --color-secondary: #{vars.$color-secondary-dark};
+  --color-accent: #{vars.$color-accent-dark};
+  --color-border: #{vars.$color-border-dark};
+  --theme-toggle: #{vars.$theme-toggle-dark};
+  --color-content-background: #{vars.$color-content-background-dark};
+}
+
+/* Auto-detect system preference (only when no class is set) */
+@media (prefers-color-scheme: dark) {
+  :root:not(.dark):not(.light) {
+    --color-background: #{vars.$color-background-dark};
+    --color-primary: #{vars.$color-primary-dark};
+    --color-secondary: #{vars.$color-secondary-dark};
+    --color-accent: #{vars.$color-accent-dark};
+    --color-border: #{vars.$color-border-dark};
+    --theme-toggle: #{vars.$theme-toggle-dark};
+    --color-content-background: #{vars.$color-content-background-dark};
+  }
+}
+
+/* =========================
+   BASE STYLES
+========================= */
+html {
+  background: var(--color-background);
+  color: var(--color-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body {
+  font-family: vars.$font-primary;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  color: var(--color-primary);
+  background: var(--color-background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: vars.$font-size-h1;
+  line-height: 1.8;
+  text-transform: uppercase;
+  font-family: vars.$font-secondary;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: vars.$font-size-body;
+  line-height: 2;
+}

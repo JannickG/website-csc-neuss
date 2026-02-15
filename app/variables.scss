@@ -1,0 +1,75 @@
+/* =========================
+   COLORS - LIGHT MODE
+========================= */
+$color-primary-light: #000;
+$color-secondary-light: green;
+$color-accent-light: #e8f380;
+$color-background-light: #ffffff;
+$color-content-background-light: #fffaf0;
+$color-border-light: gainsboro;
+$theme-toggle-light: #000;
+
+/* =========================
+   COLORS - DARK MODE
+========================= */
+$color-primary-dark: #ffffff;
+$color-secondary-dark: #7CFC00;
+$color-accent-dark: #2c3a1a;
+$color-background-dark: #121212;
+$color-content-background-dark: #333333;
+$color-border-dark: #2a2a2a;
+$theme-toggle-dark: #fff;
+
+/* =========================
+   EXPORT AS SASS VARIABLES
+   (for components that need them)
+========================= */
+$color-primary: $color-primary-light;
+$color-secondary: $color-secondary-light;
+$color-accent: $color-accent-light;
+$color-background: $color-background-light;
+$color-border: $color-border-light;
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+$font-primary: 'Arial', serif;
+$font-secondary: 'Montserrat', sans-serif;
+
+/* Font sizes */
+$font-size-body: 17px;
+$font-size-h1: 30px;
+$font-size-nav: 12px;
+$font-size-logo: 25px;
+$font-size-logo-title: 50px;
+$font-size-logo-subtitle: 25px;
+
+/* =========================
+   STATIC COLORS (for Sass math)
+========================= */
+$color-border-static: $color-border-light;
+$logo-background-color: #f0f0f0;
+
+/* =========================
+   EXTRA TOKENS / STRUCTURE
+========================= */
+$color-white: #fff;
+
+/* Background Images */
+$logo-background-image: url("/images/CSC-Neuss-e.V._logo.png");
+$logo-background-size: 300px 300px;
+
+/* Spacing */
+$max-width: 940px;
+$header-height: 70px;
+$nav-margin: 35px;
+
+/* Breakpoints */
+$breakpoint-mobile: 766px;
+
+/* Transitions */
+$transition-default: all 0.3s;
+$transition-toggle: all 200ms ease-in;
+
+/* Z-index */
+$z-index-header: 999;

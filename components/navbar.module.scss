@@ -1,0 +1,135 @@
+@use '../app/variables' as vars;
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: vars.$z-index-header;
+  width: 100%;
+  background: var(--color-background);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.container {
+  max-width: vars.$max-width;
+  margin: 0 auto;
+  padding: 16px 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  background-image: vars.$logo-background-image;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 6px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: vars.$nav-margin;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  position: relative;
+
+  a,
+  .dropdownTrigger {
+    text-transform: uppercase;
+    font-size: vars.$font-size-nav;
+    color: var(--color-secondary);
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  min-width: 180px;
+  display: none;
+  flex-direction: column;
+  padding: 8px 0;
+  z-index: 1000;
+
+  li {
+    padding: 8px 16px;
+
+    a {
+      text-transform: none;
+      font-size: 14px;
+      color: var(--color-primary);
+    }
+
+    &:hover {
+      background: var(--color-accent);
+    }
+  }
+}
+
+.menuItem:hover .dropdown {
+  display: flex;
+}
+
+.menuItem a:hover,
+.dropdownTrigger:hover {
+  color: var(--color-primary);
+}
+
+.active > a,
+.active > .dropdownTrigger {
+  color: var(--color-primary);
+  font-weight: 600;
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--color-secondary);
+}
+
+.activeDropdown {
+  background: var(--color-accent);
+}
+
+.themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: var(--color-accent);
+  }
+
+  .material-symbols-outlined {
+    font-size: 26px;
+    color: var(--theme-toggle);
+    transition: color 0.2s ease;
+  }
+
+  &:hover .material-symbols-outlined {
+    color: var(--color-primary);
+  }
+}
