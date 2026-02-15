@@ -6,7 +6,6 @@ import styles from "./navbar.module.scss";
 import { usePathname } from "next/navigation";
 
 export const MENU_ITEMS = [
-  { href: "/info", label: "Über uns" },
   { href: "/mitglied", label: "Mitglied werden" },
   { href: "/kontakt", label: "Kontakt" },
   {
