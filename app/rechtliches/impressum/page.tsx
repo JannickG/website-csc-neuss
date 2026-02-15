@@ -14,7 +14,7 @@ export default function ImpressumPage() {
         <br/>
         <p>
           CSC Neuss e.V.<br/>
-          Im Taubental 37<br/>
+          Im Taubental 37<br/>  
           41468 Neuss
         </p>
     </ContentSection>
@@ -132,23 +132,37 @@ export default function ImpressumPage() {
       <h2>Haftungsausschluss</h2>
        <ol>
         <li><b>Haftung für Inhalte</b><br/>
-        Die Inhalte unserer Website wurden mit größter Sorgfalt erstellt. Wir übernehmen jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte.
+        <div style={{ paddingLeft: '2em' }}>
+          Die Inhalte unserer Website wurden mit größter Sorgfalt erstellt. Wir übernehmen jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte.
+        </div>
         </li>
         <li><b>Haftung für Links</b><br/>
+        <div style={{ paddingLeft: '2em' }}>
         Unsere Website enthält Links zu externen Webseiten Dritter. Auf deren Inhalte haben wir keinen Einfluss und übernehmen daher keine Verantwortung. Sollten Rechtsverletzungen bekannt werden, werden wir derartige Links umgehend entfernen.
+        </div>
         </li>
         <li><b>Urheberrecht</b><br/>
+        <div style={{ paddingLeft: '2em' }}>
         Die auf dieser Website veröffentlichten Inhalte (Texte, Bilder, Grafiken) sind urheberrechtlich geschützt. Eine Vervielfältigung oder Verbreitung ist ohne schriftliche Genehmigung des CSC Neuss e.V. nicht gestattet.
+        </div>
         </li>
          </ol>
       <br/>
          <h2>Widerrufsbelehrung (bei Mitgliedschaften)</h2>
           <p>Falls der CSC Neuss e.V. online Mitgliedsanträge anbietet:</p>
         <b>Widerrufsrecht</b><br/>
+        <div style={{ paddingLeft: '2em' }}>
         Sie haben das Recht, binnen 14 Tagen ohne Angabe von Gründen Ihren Mitgliedschaftsantrag zu widerrufen.<br/>
         Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (CSC Neuss e.V., Im Taubental 37, 41468 Neuss, E-Mail: info@cscneuss.com) mittels einer eindeutigen Erklärung (z. B. per E-Mail oder Brief) über Ihren Entschluss informieren.<br/>
-        <b>Widerrufsfrist:</b> Die Widerrufsfrist beträgt 14 Tage ab dem Tag der Abgabe Ihres Antrags.<br/>
-        <b>Folgen des Widerrufs:</b> Im Falle eines Widerrufs erstatten wir Ihnen alle geleisteten Zahlungen unverzüglich, spätestens jedoch binnen 14 Tagen nach Eingang der Widerrufserklärung.
+        </div>
+        <b>Widerrufsfrist:</b><br/> 
+        <div style={{ paddingLeft: '2em' }}>
+        Die Widerrufsfrist beträgt 14 Tage ab dem Tag der Abgabe Ihres Antrags.<br/>
+        </div>
+        <b>Folgen des Widerrufs:</b><br/>
+        <div style={{ paddingLeft: '2em' }}>
+          Im Falle eines Widerrufs erstatten wir Ihnen alle geleisteten Zahlungen unverzüglich, spätestens jedoch binnen 14 Tagen nach Eingang der Widerrufserklärung.
+        </div>
         <br/>
         <h2>Barrierefreiheitserklärung</h2>
         <p>Wir sind bemüht, unsere Website barrierefrei gemäß den gesetzlichen Anforderungen zu gestalten. Sollten Ihnen Barrieren auffallen, kontaktieren Sie uns bitte unter info@cscneuss.com.</p>

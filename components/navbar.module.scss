@@ -118,18 +118,18 @@
   padding: 8px;
   border-radius: 6px;
   transition: background 0.2s ease;
-
+  color: var(--theme-toggle);
+  
   &:hover {
     background: var(--color-accent);
   }
-
-  .material-symbols-outlined {
+  
+  :global(.material-symbols-outlined) {   
     font-size: 26px;
-    color: var(--theme-toggle);
     transition: color 0.2s ease;
   }
-
-  &:hover .material-symbols-outlined {
+  
+  &:hover {
     color: var(--color-primary);
   }
 }

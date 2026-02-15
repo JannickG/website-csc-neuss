@@ -81,3 +81,13 @@ p {
   font-size: vars.$font-size-body;
   line-height: 2;
 }
+
+strong,
+b {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
